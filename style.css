@@ -1,0 +1,282 @@
+.header {
+  padding: 1.5rem;
+  color: white;
+  background: linear-gradient(to right,#1362AD,#0575E6);
+  border-top: 5px solid #428bca;
+  border-top-right-radius: 2em;
+}
+footer{
+  text-align: center;
+  padding: 2rem;
+  background-color:#182f47;
+  color:#62ccc5;
+}
+
+.h1{
+  font-weight:600;
+}
+
+.steps {
+  font-size: 1.1rem;
+  text-align:left !important;
+}
+
+#submit{
+  margin-left: 58px;
+}
+
+textarea, canvas {
+  padding: 1rem;
+  outline: none;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 8px;
+}
+.float-left{
+  float: left !important;
+}
+
+
+
+
+#msg {
+  visibility: hidden;
+  color: red;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: Verdana;
+  animation: msg .5s infinite;
+}
+
+#msg::after{
+   content: "Recording.";
+    animation: msg 1s infinite;
+}
+
+@keyframes msg {
+  33%{
+    content: "Recording.";
+  }
+
+  66%{
+    content: "Recording..";
+  }
+
+  100%{
+    content: "Recording...";
+  }
+}
+
+button {
+  padding: 5px 10px;
+  border: 1px solid grey;
+  font-size: 18px;
+  background: white;
+}
+
+.audio-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.intro-text{
+  padding: 2rem 2rem 0 2rem;
+  background-color: #8dc5fd;
+  border-bottom-right-radius: 2em;
+}
+.container-ml{
+  font-size: 1.1rem;
+ padding: 3.5rem 4rem;
+}
+
+progress{
+  margin-left: 2rem !important;
+  margin-right: 1rem !important;
+
+}
+
+#audio{
+  margin-right: 2.4rem;
+}
+
+.hidden{
+  display: none;
+}
+
+.submit{
+  clear: both;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #8dc5fd;
+}
+
+
+.submit-members{
+ color: white; background-color: #1f3f5f; display: flex; justify-content: space-around;
+}
+
+
+.audio-controls button {
+  margin: 0px 5px;
+}
+canvas {
+  margin-top: 10px;
+  background-color: black;
+}
+select {
+  height: 25px;
+  margin: 0px 5px;
+}
+a {
+  margin-left: 20px;
+}
+.app {
+  text-align: center;
+  padding-top: 20px;
+}
+
+ol{
+  font-size: 1rem;
+}
+.nav {
+background: #8dc5fd;
+}
+
+.nav a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: .8rem;
+  font-weight: 700;
+  color: #d3eced;
+}
+
+hr.new4 {
+  border: 1px dashed rgb(170, 170, 170);
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.canvas{
+  margin-bottom: 4rem;
+}
+
+#record,#stop {
+  box-shadow: 0 3px #172c4b;
+   border: none;
+}
+
+#submit_audio{
+   box-shadow: 0 5px #172c4b;
+   border: none;
+  margin-left: 2rem !important;
+ 
+}
+
+#submit_audio:hover{
+  background-color: #3e8e41;
+  border: none;
+ 
+}
+#submit_audio:active{
+  box-shadow: 0 3px #172c4b;
+  transform: translateY(4px);
+}
+
+#record:hover{
+  background-color: #0897ff;
+}
+
+#stop:hover{
+   background-color: #b90505;
+}
+
+#record:active,#stop:active{
+  box-shadow: 0 1px #172c4b;
+  transform: translateY(4px);
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.proj-sup p,.proj-mem p{
+  font-size: .6rem;
+  color: #62ccc5;
+}
+.proj-sup a,.proj-mem a{
+  color: white;
+  text-decoration: none;
+  transition: all .3s;
+}
+.proj-sup a:hover,.proj-mem a:hover{
+  color: #fff;
+}
+.member{
+  display: flex;
+  flex-direction: row;
+}
+ 
+@media only screen and (max-width: 600px) {
+  textarea, canvas {
+  width: 250px;
+  /* margin-left: 0 !important; */
+}
+ #micSelect{
+   width: 200px;
+ }
+ .canvas {
+    margin-bottom: 2rem;
+}
+#audio {
+    margin-right:0rem;
+}
+#reset{
+  display: block;
+}
+ .h6 {
+   text-align: left;
+ }
+  .submit{
+    flex-direction: column;
+  }
+  .submit p {
+    text-align: center;
+  }
+  #submit_audio{
+    margin: 0 auto !important;
+  }
+  .container-ml{
+    padding: 2rem 3rem;
+  }
+  .pull-left{
+    margin-bottom: 1rem;
+  }
+  .bottom{
+    flex-direction: column;
+  }
+  .submit-members{
+    flex-direction: column;
+  }
+  .avatar{
+    width: 30px;
+    height: 30px;
+  }
+} 
+@media only screen and (max-width: 330px) {
+  .avatar{
+    width: 20px;
+    height: 20px;
+  }
+  .proj-sup p,.proj-mem p{
+  font-size: .4rem;
+  color: #62ccc5;
+}
+}
